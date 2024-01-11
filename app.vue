@@ -37,7 +37,7 @@
             <a-input
               v-model:value="formState.server"
               placeholder="Choose model"
-              :disabled="modelTypeTitle.length === 0 ?? false"
+              :disabled="modelTypeTitle.length !== 0 ? false : true"
             />
           </a-form-item>
           <a-form-item>
